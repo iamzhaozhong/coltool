@@ -1,15 +1,15 @@
-# Project ONE - The coltool
+## Project ONE - The coltool
 
 Hello and welcome to my project **coltool**. The **coltool** is a simple calculation tool to help end-users conceptualize the cost of living between cities around the United States. I hope this tool can serve as a decisioning helper for those who are moving across different cities, or even just a fun little discovery tool!
 
-## Initial Preparation and Project Initiator
+### Initial Preparation and Project Initiator
 
-### Basic Information for the app
+#### Basic Information for the app
 
-| Application Name: | coltool - col(cost of living) tool |
-| Description of the App: |This applications seeks to leverage the Wolfram Alpha database, statistics as it's primary source, the tool will compute the different cost of living to help user understand the economic impact in plain language.|
-| API | Wolfram Alpha Knowledge Database |
-| API Snippets | WPI|
+Application Name: | coltool - col(cost of living) tool
+Description of the App: | This applications seeks to leverage the Wolfram Alpha database, statistics as it's primary source, the tool will compute the different cost of living to help user understand the economic impact in plain language.
+API | Wolfram Alpha Knowledge Database
+API Snippets | WPI
 
 ## Describe your project
 
