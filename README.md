@@ -1,17 +1,14 @@
 ## Project ONE - The COLtool
-***
 
 Hello and welcome to my project **coltool**. The **coltool** is a simple calculation tool to help end-users conceptualize the cost of living between cities around the United States. I hope this tool can serve as a decisioning helper for those who are moving across different cities, or even just a fun little discovery tool!
 
 ### Table of Contents
-*** 
 
 - ##### Welcome
 - ##### Initial Preparation and KPI
 
 
 ### **Initial Preparation and KPI**
-***
 
 #### 1. Overview
 
