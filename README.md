@@ -22,14 +22,17 @@ Hello and welcome to my project **coltool**. The **coltool** is a simple calcula
 | API                             | Wolfram Alpha API                                                                                                                                                                              |
 | API Snippets                    | http://api.wolframalpha.com/v2/query?appid=DEMO&input=population%20of%20france                                                                                                                                 |
 
-#### 2. The Wireframe
+### The Wireframe
 ![image-1](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%201.png)
 ![image-2](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%202.png)
 ![image-3](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%203.png)
 
-#### 4. Describe your project
+### Roadmaps, Timeframe, and Priority Matrix
+Roadmap from JIRA screenshot
+![image-4](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/board/coltool_2021-11-08_06.43am.png)
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
+Priority Matrix for the current issues
+![image-5](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/board/dash.png)
 
 [Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
 
