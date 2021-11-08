@@ -29,8 +29,9 @@ Hello and welcome to my project **coltool**. The **coltool** is a simple calcula
 | API Snippets                    | http://api.wolframalpha.com/v2/query?appid=DEMO&input=population%20of%20france                                                                                                                                 |
 
 #### 2. The Wireframe
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
-
+![image-1](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%201.png)
+![image-2](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%202.png)
+![image-3](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%203.png)
 
 #### 4. Describe your project
 
