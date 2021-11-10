@@ -1,5 +1,5 @@
 //string interp
-// const auth = 'appid=5YQ6LG-GH3HQ42U69&input='
+
 const apiToken = `${token}&input=`;
 const link = 'https://api.wolframalpha.com/v2/query?';
 const proxy = 'https://intense-cove-57821.herokuapp.com/'
