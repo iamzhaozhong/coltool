@@ -1,3 +1,10 @@
+/*Flexbox for overall container*/
+.flex-container#overall-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*For Navigation Bar*/
 /* Add a black background color to the top navigation */
 .navBar {
@@ -39,17 +46,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 550px;
     background-color: #CCBC71;
 }
 
-/*Resuts section*/
+/*Results section*/
 .flex-container#results{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: auto;
     background-color: #78A778;
 }
 
@@ -75,12 +81,16 @@ input[type=text] {
     background-color: #f1f1f1;
     width: 100%;
 }
+div.button {
+    flex-direction: column;
+    alignment-baseline: center;
+}
 button {
     font-size: 16px Arial;
-    width: auto;
+    width: 120px;
+    height: 50px;
     background-color: #5656EB;
     color: white;
-    border-color: none;
 }
 .autocomplete-items {
     position: absolute;

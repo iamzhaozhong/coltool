@@ -12,46 +12,49 @@
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-<!--Create the nav bar-->
-<div class="navBar">
-  <div class="items">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a></div>
-</div>
-<!--Hero Section with large font and indicators-->
-<section class = "flex-container" id = "hero">
-  <h1 id = "from">I am moving from</h1>
-  <!--    First Box-->
-  <form autocomplete="off" onsubmit= "formatInput()">
-    <div class="autocomplete" style="width:300px;">
-      <input id="0" type="text" name="myCountry" placeholder="Current City">
+  <section class = "flex-container" id ="overall-page">
+  <!--Create the nav bar-->
+    <div class="navBar">
+      <div class="items">
+        <a class="active" href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a></div>
     </div>
-  </form>
-  <h1 id= "to">To</h1>
-  <!--    Second Box-->
-  <form autocomplete="off" onsubmit= "formatInputTwo()">
-    <div class="autocomplete" style="width:300px;">
-      <input id="1" type="text" name="myCountry" placeholder="Target City">
-    </div>
-  </form>
-  <h1>with a salary of</h1>
-  <!--    Salary Input-->
-  <div class="salary-section">
-    <input type="number" id="blank" placeholder="Enter Current Salary">
-    <button id="calculate">Calculate</button>
-  </div>
-</section>
-<!--  The end of the hero section-->
+    <!--Hero Section with large font and indicators-->
+    <section class = "flex-container" id = "hero">
+      <h1 id = "from">I am moving from</h1>
+      <!--    First Box-->
+      <form autocomplete="off">
+        <div class="autocomplete" style="width:300px;">
+          <input id="0" type="text" name="myCountry" placeholder="Current City">
+        </div>
+      </form>
+      <h1 id= "to">To</h1>
+      <!--    Second Box-->
+      <form autocomplete="off">
+        <div class="autocomplete" style="width:300px;">
+          <input id="1" type="text" name="myCountry" placeholder="Target City">
+        </div>
+      </form>
+      <h1>with a salary of</h1>
+      <!--    Salary Input-->
+      <div class="salary-section">
+        <input type="number" id="blank" placeholder="Enter Current Salary">
+        <div class= "button">
+          <button id="calculate">Calculate</button>
+        </div>
+      </div>
+    </section>
+    <!--  The end of the hero section-->
 
-<!--Result Section-->
-<section class="flex-container" id = "results">
-  <h2>Display Results</h2>
-</section>
-<!--The end of result section-->
-<section class="flex-container" id = "footer">
-  <h3>Footer</h3>
-</section>
-
+    <!--Result Section-->
+    <section class="flex-container" id = "results">
+      <h2>Display Results</h2>
+    </section>
+    <!--The end of result section-->
+    <section class="flex-container" id = "footer">
+      <h3>Footer</h3>
+    </section>
+  </section>
 </body>
 </html>
