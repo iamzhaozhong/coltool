@@ -7,147 +7,143 @@ const list = document.querySelector('.results');
 //create two search boxes with drop down actions
 //taking the user input and display the autocomplete suggestions
 for (let z = 0; z < 2; z++) {
-  autocomplete(document.getElementById(`${z}`),listOfCities,z);
+    autocomplete(document.getElementById(`${z}`),listOfCities,z);
 }
 
 function autocomplete(inp, arr, num) {
-  let currentFocus;
-  inp.addEventListener("input", function(e) {
-    let a, b, i, val = this.value;
-    //close the list that is already shown
-    closeAllLists();
-    if (!val) {return false;}
-    currentFocus = -1;
-    //div element for the autocomplete list
-    a = document.createElement('div');
-    a.setAttribute("id", this.id + "autocomplete-list");
-    a.setAttribute("class", "autocomplete-items");
-    //adding the possible hints
-    this.parentNode.appendChild(a);
-    //looping in the cities
-    for (let i = 0; i < arr.length; i++) {
-      /*check if the item starts with the same letters as the text field value:*/
-      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-        /*create a DIV element for each matching element:*/
-        b = document.createElement('div');
-        /*make the matching letters bold:*/
-        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-        b.innerHTML += arr[i].substr(val.length);
-        /*insert a input field that will hold the current array item's value:*/
-        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-        /*execute a function when someone clicks on the item value (DIV element):*/
-        b.addEventListener("click", function(e) {
-          /*insert the value for the autocomplete text field:*/
-          inp.value = this.getElementsByTagName("input")[0].value;
-          userInput[num] = inp.value;
-          /*close the list of autocompleted values,
-          (or any other open lists of autocompleted values:*/
-          closeAllLists();
-        });
-        a.appendChild(b);
-      }
+    let currentFocus;
+    inp.addEventListener("input", function(e) {
+        let a, b, i, val = this.value;
+        //close the list that is already shown
+        closeAllLists();
+        if (!val) {return false;}
+        currentFocus = -1;
+        //div element for the autocomplete list
+        a = document.createElement('div');
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        //adding the possible hints
+        this.parentNode.appendChild(a);
+        //looping in the cities
+        for (let i = 0; i < arr.length; i++) {
+            /*check if the item starts with the same letters as the text field value:*/
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                /*create a DIV element for each matching element:*/
+                b = document.createElement('div');
+                /*make the matching letters bold:*/
+                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML += arr[i].substr(val.length);
+                /*insert a input field that will hold the current array item's value:*/
+                b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                /*execute a function when someone clicks on the item value (DIV element):*/
+                b.addEventListener("click", function(e) {
+                    /*insert the value for the autocomplete text field:*/
+                    inp.value = this.getElementsByTagName("input")[0].value;
+                    userInput[num] = inp.value;
+                    /*close the list of autocompleted values,
+                    (or any other open lists of autocompleted values:*/
+                    closeAllLists();
+                });
+                a.appendChild(b);
+            }
+        }
+    });
+    /*execute a function presses a key on the keyboard:*/
+    inp.addEventListener("keydown", function(e) {
+        let x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+            /*If the arrow DOWN key is pressed,
+            increase the currentFocus variable:*/
+            currentFocus++;
+            /*and and make the current item more visible:*/
+            addActive(x);
+        } else if (e.keyCode == 38) { //up
+            /*If the arrow UP key is pressed,
+            decrease the currentFocus variable:*/
+            currentFocus--;
+            /*and and make the current item more visible:*/
+            addActive(x);
+        } else if (e.keyCode == 13) {
+            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+            e.preventDefault();
+            if (currentFocus > -1) {
+                /*and simulate a click on the "active" item:*/
+                if (x) x[currentFocus].click();
+            }
+        }
+    });
+    function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
     }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-    let x = document.getElementById(this.id + "autocomplete-list");
-    if (x) x = x.getElementsByTagName("div");
-    if (e.keyCode == 40) {
-      /*If the arrow DOWN key is pressed,
-      increase the currentFocus variable:*/
-      currentFocus++;
-      /*and and make the current item more visible:*/
-      addActive(x);
-    } else if (e.keyCode == 38) { //up
-      /*If the arrow UP key is pressed,
-      decrease the currentFocus variable:*/
-      currentFocus--;
-      /*and and make the current item more visible:*/
-      addActive(x);
-    } else if (e.keyCode == 13) {
-      /*If the ENTER key is pressed, prevent the form from being submitted,*/
-      e.preventDefault();
-      if (currentFocus > -1) {
-        /*and simulate a click on the "active" item:*/
-        if (x) x[currentFocus].click();
-      }
+    function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("autocomplete-active");
+        }
     }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
+    function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        let x = document.getElementsByClassName("autocomplete-items");
+        for (let i = 0; i < x.length; i++) {
+            if (elmnt != x[i] && elmnt != inp) {
+                x[i].parentNode.removeChild(x[i]);
+            }
+        }
     }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    let x = document.getElementsByClassName("autocomplete-items");
-    for (let i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
-      }
-    }
-  }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function (e) {
-    closeAllLists(e.target);
-  });
+    /*execute a function when someone clicks in the document:*/
+    document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+    });
 }
 
 
 //salary input,listener, and call the API
 const salaryInput = document.querySelector('#calculate');
 salaryInput.addEventListener('click', () => {
-  let salaries = document.querySelector("#blank").value;
-  finalInput(salaries, userInput);
-;});
+    let salaries = document.querySelector("#blank").value;
+    finalInput(salaries, userInput);
+    ;});
 
 function finalInput(num, arr) {
-  let input = encodeURIComponent(`moving from ${userInput[0]} to ${userInput[1]} salary ${num}`);
-  makeRequest(input);
+    let input = encodeURIComponent(`moving from ${userInput[0]} to ${userInput[1]} salary ${num}`);
+    makeRequest(input);
 }
 
 async function makeRequest(str) {
-  try {
-    const res = await axios.get(`${proxy}${link}${token}${str}&output=json`);
-    let result = res.data.queryresult.pods;
-    console.log(result);
-    console.log(result.length);
-    console.log(typeof result);
-    displayResult(result);
-  }
-  catch(error) {
-    console.log(error);
-  }
+    try {
+        const res = await axios.get(`${proxy}${link}${token}${str}&output=json`);
+        let result = res.data.queryresult.pods;
+        console.log(result);
+        console.log(result.length);
+        console.log(typeof result);
+        displayResult(result);
+    }
+    catch(error) {
+        console.log(error);
+    }
 }
 
 function displayResult(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let container = document.createElement('div');
-    //Equivalent Salary and img
-    let titleHolder = document.createElement('h2');
-    let img = document.createElement('img');
-    img.src = arr[i].subpods[0].img.src;
-    titleHolder.innerText = arr[i].title;
-    container.appendChild(titleHolder);
-    container.appendChild(img);
-    list.appendChild(container);
-  }
+    for (let i = 0; i < arr.length; i++) {
+        let container = document.createElement('div');
+        //Equivalent Salary and img
+        let titleHolder = document.createElement('h2');
+        let img = document.createElement('img');
+        img.src = arr[i].subpods[0].img.src;
+        titleHolder.innerText = arr[i].title;
+        container.appendChild(titleHolder);
+        container.appendChild(img);
+        list.appendChild(container);
+    }
 }
 
 //Place holder for animations
-
-
-
-
