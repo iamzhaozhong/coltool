@@ -4,7 +4,6 @@ const listOfCities = ["Aberdeen", "Abilene", "Akron", "Albany", "Albuquerque", "
 let userInput = [];
 const list = document.querySelector('.results');
 
-
 //create two search boxes with drop down actions
 //taking the user input and display the autocomplete suggestions
 for (let z = 0; z < 2; z++) {
