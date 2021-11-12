@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src = "config.js"></script>
   <script defer src="script.js"></script>
@@ -12,6 +13,17 @@
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
+<!--Preloading screen-->
+  <div id="preloader" class="preloader-container">
+    <div class="animation">
+      <div class="player">
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_wvwimamz.json"  background="transparent"  speed="1.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+      </div>
+      <a id="skip">Hello</a>
+    </div>
+  </div>
+
+<!--Website starts here-->
   <section class = "flex-container" id ="overall-page">
   <!--Create the nav bar-->
     <div class="navBar">

@@ -146,3 +146,24 @@ function displayResult(arr) {
 }
 
 //Place holder for animations
+//create the preloading screen
+let box = document.querySelector("#preloader");
+let btn = document.querySelector("#skip");
+
+function fadeOut() {
+    box.classList.add("visuallyhidden");
+    box.addEventListener(
+        "transitionend",
+        function (e) {
+            box.classList.add("hidden");
+        },
+        {
+            capture: false,
+            once: true,
+            passive: false
+        }
+    );
+}
+
+btn.addEventListener("click", fadeOut, false);
+setTimeout(fadeOut, 6000);
