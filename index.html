@@ -9,8 +9,10 @@
   <script src = "config.js"></script>
   <script defer src="script.js"></script>
   <title>COL-TOOL</title>
-  <!--suppress HtmlDeprecatedAttribute -->
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+  </style>
 </head>
 <body>
 <!--Preloading screen-->
@@ -34,26 +36,26 @@
     </div>
     <!--Hero Section with large font and indicators-->
     <section class = "flex-container" id = "hero">
-      <h1 id = "from">I am moving from</h1>
+      <h1 id = "from">I AM MOVING FROM</h1>
       <!--    First Box-->
       <form autocomplete="off">
         <div class="autocomplete" style="width:300px;">
-          <input id="0" type="text" name="myCountry" placeholder="Current City">
+          <input id="0" type="text" name="myCountry" placeholder="City">
         </div>
       </form>
-      <h1 id= "to">To</h1>
+      <h1 id= "to">TO</h1>
       <!--    Second Box-->
       <form autocomplete="off">
         <div class="autocomplete" style="width:300px;">
-          <input id="1" type="text" name="myCountry" placeholder="Target City">
+          <input id="1" type="text" name="myCountry" placeholder="City">
         </div>
       </form>
-      <h1>with a salary of</h1>
+      <h1>WITH A SALARY OF</h1>
       <!--    Salary Input-->
       <div class="salary-section">
-        <input type="number" id="blank" placeholder="Enter Current Salary">
+        <input type="number" id="blank" placeholder="$">
         <div class= "button">
-          <button id="calculate">Calculate</button>
+          <button variant ="outlined" id="calculate">Calculate</button>
         </div>
       </div>
     </section>
