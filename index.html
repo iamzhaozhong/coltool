@@ -11,7 +11,8 @@
   <title>COL-TOOL</title>
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
   </style>
 </head>
 <body>
@@ -30,39 +31,44 @@
   <!--Create the nav bar-->
     <section class = "flex-container" id = "navigation">
       <div class ="navBar">
-        <a>HOME</a>
-        <a>CONTACT</a>
-        <a>ABOUT</a>
+        <a>Home</a>
+        <a>Contact</a>
+        <a>About</a>
       </div>
       <div class ="nav-lottie">
         <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_sx5e0zms.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
       </div>
     </section>
     <section class="quote">
-      <h3 id = "quote">“WHEREVER YOU GO, GO WITH ALL YOUR HEART!”</h3>
+      <h3 id = "quote">“Wherever you go, go with all you heart!”</h3>
     </section>
+
     <!--Hero Section with large font and indicators-->
     <section class = "flex-container" id = "hero">
-      <h1 id = "from">I AM MOVING FROM</h1>
-      <!--    First Box-->
-      <form autocomplete="off">
-        <div class="autocomplete" style="width:300px;">
-          <input id="0" type="text" name="myCountry" placeholder="City">
-        </div>
-      </form>
-      <h1 id= "to">TO</h1>
-      <!--    Second Box-->
-      <form autocomplete="off">
-        <div class="autocomplete" style="width:300px;">
-          <input id="1" type="text" name="myCountry" placeholder="City">
-        </div>
-      </form>
-      <h1>WITH A SALARY OF</h1>
-      <!--    Salary Input-->
-      <div class="salary-section">
-        <input type="number" id="blank" placeholder="$">
-        <div class= "button">
-          <button variant ="outlined" id="calculate">Calculate</button>
+      <div class = "hero-box">
+        <div class = "hero-box-inner">
+          <h1>I am moving from</h1>
+          <!--    First Box-->
+          <form autocomplete="off">
+            <div class="autocomplete" style="width:300px;">
+              <input id="0" type="text" name="myCountry" placeholder="City">
+            </div>
+          </form>
+          <h1>To</h1>
+          <!--    Second Box-->
+          <form autocomplete="off">
+            <div class="autocomplete" style="width:300px;">
+              <input id="1" type="text" name="myCountry" placeholder="City">
+            </div>
+          </form>
+          <h1>With a salary of </h1>
+          <!--    Salary Input-->
+          <div class="salary-section">
+            <input type="number" id="blank" placeholder="$">
+            <div class= "button">
+              <button variant ="outlined" id="calculate">Calculate</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
