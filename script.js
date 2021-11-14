@@ -121,7 +121,7 @@ function finalInput(num, arr) {
 
 async function makeRequest(str) {
     try {
-        const res = await axios.get(`${proxy}${link}${token}${str}&output=json`);
+        const res = await axios.get(`${proxy}${link}${token}${str}&output=json&width=650&mag=1.1`);
         let result = res.data.queryresult.pods;
         console.log(result);
         console.log(result.length);
@@ -170,3 +170,4 @@ btn.addEventListener("click", fadeOut, false);
 setTimeout(fadeOut, 6000);
 
 //need to - replace the first pod in the query and and the income tab as a result
+//try to return the text instead of the image for higher quality
