@@ -25,7 +25,7 @@ Hello and welcome to my project **coltool**. The **coltool** is a simple calcula
 
 ### The Wireframe
 The initial goal was to drive the app and its contents on a single page basis, with two cities comparing to each other.
-![image-1](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%201.png)
+<kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%201.png" /></kbd>
 ![image-2](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%202.png)
 ![image-3](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%203.png)
 
