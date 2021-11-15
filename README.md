@@ -39,7 +39,7 @@ I've used the JIRA software to tracking time and priorities, the exported Roadma
 | Post MVP                             | At this stage, it was important to me to have a clean and user friendly interface, much of the time spend on the "flow" of the website and visual effects that was included in the final product.                                                                                                                                                                           |
 
 #### Roadmap (from JIRA)
-
+![image-4](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/jira-board/coltool_2021-11-15_04.28am.png)
 
 ####Timesheet
 
@@ -62,10 +62,6 @@ I've used the JIRA software to tracking time and priorities, the exported Roadma
 | Post MVP | Adding other CSS animations to make the UI more attractive | 5 hours | 10 hours |
 | Post MVP | Update the changes on Github and clean up the repository before project finishes| 1 hour | 2 hours |
 | Grand Total | N/A  | 38.5 hours | 50 hours| 
-
-
-
-
 
 
 ### Miscellaneous
