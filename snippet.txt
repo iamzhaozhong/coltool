@@ -1,4 +1,0 @@
-icons - 
-
-import GitHubIcon from '@mui/icons-material/GitHub';
-import HomeIcon from '@mui/icons-material/Home';
