@@ -26,8 +26,8 @@ Hello and welcome to my project **coltool**. The **coltool** is a simple calcula
 ### The Wireframe
 The initial goal was to drive the app and its contents on a single page basis, with two cities comparing to each other.
 <kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%201.png" /></kbd>
-![image-2](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%202.png)
-![image-3](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%203.png)
+<kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%202.png" /></kbd>
+<kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/wireframe/Web%201920%20%E2%80%93%203.png" /></kbd>
 
 ### Roadmaps, Timeframe, and Priority Matrix
 I've used the JIRA software to tracking time and priorities, the exported Roadmap will be shown in the next section.
@@ -39,7 +39,7 @@ I've used the JIRA software to tracking time and priorities, the exported Roadma
 | Post MVP                             | At this stage, it was important to me to have a clean and user friendly interface, much of the time spend on the "flow" of the website and visual effects that was included in the final product.                                                                                                                                                                           |
 
 #### Roadmap (from JIRA)
-![image-4](https://raw.githubusercontent.com/iamzhaozhong/coltool/master/jira-board/coltool_2021-11-15_04.28am.png)
+<kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/jira-board/coltool_2021-11-15_04.28am.png" /></kbd>
 
 ####Timesheet
 
