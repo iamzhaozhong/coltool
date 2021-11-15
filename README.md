@@ -37,6 +37,8 @@ I've used the JIRA software to tracking time and priorities, the exported Roadma
 | MVP | There were three major features that was included in the MVP: HTML markup based on the Wireframe, JavaScript that enables the basic API capabilities, and CSS for front-end responsiveness. |
 | Post MVP                             | At this stage, it was important to me to have a clean and user friendly interface, much of the time spend on the "flow" of the website and visual effects that was included in the final product.                                                                                                                                                                           |
 
+To keep track of the priorities, here is an example of filtered issue on my JIRA dashboard based on the level of importance.
+<kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/jira-board/Screen%20Shot%202021-11-15%20at%207.55.11%20AM.png" /></kbd>
 #### Roadmap (from JIRA)
 <kbd><img src = "https://raw.githubusercontent.com/iamzhaozhong/coltool/master/jira-board/coltool_2021-11-15_04.28am.png" /></kbd>
 
