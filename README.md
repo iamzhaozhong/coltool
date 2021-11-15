@@ -1,14 +1,13 @@
-## Project ONE - The COLtool
+## Project ONE - The COL Tool
 
-Hello and welcome to my project **coltool**. The **coltool** is a simple calculation tool to help end-users conceptualize the cost of living between cities around the United States. I hope this tool can serve as a decisioning helper for those who are moving across different cities, or even just a fun little discovery tool!
+Hello and welcome to my project **COL Tool**. The **COL Tool** is a simple calculation tool to help end-users conceptualize the cost of living between cities around the United States. I hope this tool can serve as a decisioning helper for those who are moving across different cities, or even just a fun little discovery tool!
 
 ### Table of Contents
 
-- ##### Welcome
-- ##### Initial Preparation and KPI
-- ##### Timeframes and development tracking
-
-### **Initial Preparation and KPI**
+- ##### Project Overview
+- ##### Links & Wireframe 
+- ##### Timekeeping & Roadmap
+- ##### Issues and Future considerations
 
 #### Project Overview
 
@@ -64,8 +63,9 @@ I've used the JIRA software to tracking time and priorities, the exported Roadma
 | Grand Total | N/A  | 38.5 hours | 50 hours| 
 
 
-### Miscellaneous
+### Issues and Future considerations
 
 Some issues encountered during the build includes: a proxy was needed to bypass browser policy (CDR) restriction that was not initially discovered in Postman. Separating files that keep private APIs safe.
 
+Future consideration: make the contact form available for the end-user. More testing on to rule out error cases, and improvement of API response time(not sure if there is a way to do it). 
 
