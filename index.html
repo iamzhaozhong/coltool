@@ -9,7 +9,8 @@
   <script src = "config.js"></script>
   <script defer src="script.js"></script>
   <title>COL-TOOL</title>
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel ="stylesheet" href="style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
@@ -42,7 +43,16 @@
     <section class="quote">
       <h3 id = "quote">“Wherever you go, go with all you heart!”</h3>
     </section>
-
+<!--    About Section-->
+    <section class = "about">
+      <div class = "about-section">
+        <h1>ABOUT</h1>
+        <h2>COL-TOOL</h2>
+        <p>COL simply stands for cost of living, and this tool is intend to provide some preliminary information regarding your move into a different city.
+          Or perhaps you're just curious. This site uses the Wolfram Alpha API based on their natural language processing functionality in addition to their economic database gathered from various U.S. bureau that provides the data.
+          </p>
+      </div>
+    </section>
     <!--Hero Section with large font and indicators-->
     <section class = "flex-container" id = "hero">
       <div class = "hero-box">
@@ -51,20 +61,20 @@
           <!--    First Box-->
           <form autocomplete="off">
             <div class="autocomplete" style="width:300px;">
-              <input id="0" type="text" name="myCountry" placeholder="City">
+              <input type = "text" placeholder="&#xF689" id="0" name="myCountry" style="font-family: Arial, 'Font Awesome 5 Free'"/>
             </div>
           </form>
           <h1>To</h1>
           <!--    Second Box-->
           <form autocomplete="off">
             <div class="autocomplete" style="width:300px;">
-              <input id="1" type="text" name="myCountry" placeholder="City">
+              <input type = "text" placeholder="&#xF689" id="1" name="myCountry" style="font-family: Arial, 'Font Awesome 5 Free'"/>
             </div>
           </form>
           <h1>With a salary of </h1>
           <!--    Salary Input-->
           <div class="salary-section">
-            <input type="number" id="blank" placeholder="$">
+            <input type="number" id="blank" style="font-family: Arial, 'Font Awesome 5 Free'" placeholder="&#xF155"/>
             <div class= "button">
               <button variant ="outlined" id="calculate">Calculate</button>
             </div>
@@ -76,28 +86,27 @@
 
     <!--Result Section-->
     <section class="flex-container" id = "results">
-      <h2>Display Results</h2>
+      <div class="result-side-bar">
+        <nav class="result-navigation">
+          <ul class="result-ul">
+            <li class = "result-li"></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="result-content"></div>
     </section>
     <!--The end of result section-->
     <section class="flex-container" id = "footer">
-      <div id = "footer-message">
-        <h3>By Zhao Zhong</h3>
-      </div>
-
-      <div id = "footer-icons">
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f icon"></i>    </a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter icon"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-          <li>
-            <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
-        </ul>
+      <div class = "box-twice">
+        <div id = "footer-message">
+          <h2 class="footer">ZHAO ZHONG #GA-VELVET-WORM NOV.2021</h2>
+        </div>
+        <div id = "git-icon">
+          <a href = "https://github.com/iamzhaozhong"><lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kq6zs04j.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player></a>
+        </div>
+        <div id ="linkedin-icon">
+          <a href ="http://www.linkedin.com/in/junzhaozhongliu"><lottie-player src="https://assets4.lottiefiles.com/packages/lf20_iou79yni.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player></a>
+        </div>
       </div>
     </section>
   </section>
